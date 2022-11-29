@@ -4,7 +4,7 @@
 using static System.Console;
 Clear() ;
 
-int ConsoleInput(string text )
+/*int ConsoleInput(string text )
 {
     WriteLine(text) ;
     return Convert.ToInt32(ReadLine());
@@ -19,4 +19,15 @@ int NumberSecondDigit (int num)
 
 int number = ConsoleInput(" Введите трехзначное число ");
 int result=NumberSecondDigit(number);
-WriteLine($" число во втором разряде -> {result}");
+WriteLine($" число во втором разряде -> {result}");*/
+
+// Напишите код программы вывода третей цифры числа
+
+Write("Ввидите число N ");
+string N = ReadLine();
+if (N.Length > 2)
+    WriteLine($"третье число {N[2].ToString()}");
+else 
+    WriteLine(" третьего знака нет ");
+
+
