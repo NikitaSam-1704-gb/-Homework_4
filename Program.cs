@@ -285,7 +285,7 @@ else
     WriteLine($" минимальная разница между элементами {massivWork[1]}");*/
    
  
-//Напишите программу, которая принимает на вход число и выдаёт количество цифр в числе.
+/*//Напишите программу, которая принимает на вход число и выдаёт количество цифр в числе.
 //456 -> 3
 //78 -> 2
 //89126 -> 5
@@ -316,6 +316,32 @@ int CountDigir(int number)
 int numberWork=InputConsoleNumber("Введите число -> ");
 int countWork=CountDigir(numberWork);
 
-   WriteLine($" Количество цифр в числе -> {countWork} "); 
+   WriteLine($" Количество цифр в числе -> {countWork} "); */
+
+//Напишите программу, которая принимает на вход число N и выдаёт произведение чисел от 1 до N.
+//4 -> 24 5 -> 120
+
+using static System.Console ;
+Clear ();
    
- 
+int InputConsoleNumber(string message)
+{
+    Write(message);
+    int n=Convert.ToInt32(ReadLine());
+    return n;
+}
+
+double Factorial(int number)
+{
+    double summ=1;
+    for(int i=1; i<=number; i++)
+    {
+        summ=summ*i;
+    }
+    return summ;
+}
+
+int numberWork=InputConsoleNumber("Введите натурально число N -> ");
+double summWork=Factorial(numberWork);
+
+WriteLine($" Факториал {numberWork} равен {summWork} ");
