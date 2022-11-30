@@ -28,6 +28,3 @@ if (N.Length > 2)
     WriteLine($"третье число {N[2].ToString()}");
 else 
     WriteLine(" третьего знака нет ");
-
-
->>>>>>> task1
