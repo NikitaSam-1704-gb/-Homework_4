@@ -230,3 +230,92 @@ else
     WriteLine($" Значение максимальной суммы соседних элементов {massivWork[0]}");
     WriteLine($" Значение элементов {massivWork[3]}  {massivWork[4]}");
  }*/
+
+ //Дан массив размером N.
+//Найти элементы с минимальной разницей  значений
+
+/*using static System.Console ;
+Clear ();
+
+int[] FillArrayRamdom(int size)
+{
+    int[] array = new int[size];
+    for(int i=0; i<array.Length; i++)
+        array[i]=new Random().Next(0,11);
+    return array;
+}
+
+void PrintArray(int[] array)
+{
+    for(int i=0; i<array.Length; i++)
+        Write(array[i] + " ");
+    WriteLine();
+}
+
+int[] ElementsMinimalDifference(int [] array)
+{
+    int[] massiv = new int[2];
+    massiv[0]=-1;
+    if(array.Length<=1)
+        return massiv;
+    else massiv[0]=0;
+    int summMin;
+    massiv[1]=Math.Abs(array[0]-array[1]);
+    for(int i=2; i<array.Length; i++)
+    {
+        summMin= Math.Abs(array[i-1]-array[i]);
+        if(summMin<massiv[1])
+            massiv[1]=summMin;
+    } 
+    return massiv; 
+}
+
+
+Write("Введите размерность массива N -> ");
+int n=Convert.ToInt16(ReadLine());
+
+int[] arrayWork=FillArrayRamdom(n);
+PrintArray(arrayWork);
+int[] massivWork=ElementsMinimalDifference(arrayWork);
+//PrintArray(massivWork);
+
+if(massivWork[0]==-1)
+   WriteLine(" Необходимое количество элементов массива два и более "); 
+else 
+    WriteLine($" минимальная разница между элементами {massivWork[1]}");*/
+   
+ 
+//Напишите программу, которая принимает на вход число и выдаёт количество цифр в числе.
+//456 -> 3
+//78 -> 2
+//89126 -> 5
+ 
+using static System.Console ;
+Clear ();
+
+int InputConsoleNumber(string message)
+{
+    WriteLine(message);
+    int n=Convert.ToInt32(ReadLine());
+    return n;
+}
+
+
+int CountDigir(int number)
+{
+    int count=0;
+    while(number>0)
+    {
+        number=number/10;
+        count++;
+    }
+    return count; 
+}
+
+
+int numberWork=InputConsoleNumber("Введите число -> ");
+int countWork=CountDigir(numberWork);
+
+   WriteLine($" Количество цифр в числе -> {countWork} "); 
+   
+ 
