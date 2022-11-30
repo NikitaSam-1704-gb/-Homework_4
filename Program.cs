@@ -21,10 +21,9 @@ int number = ConsoleInput(" Введите трехзначное число ");
 int result=NumberSecondDigit(number);
 WriteLine($" число во втором разряде -> {result}");*/
 
-// Напишите код программы вывода третей цифры числа
 
 Write("Ввидите число N ");
-string N = ReadLine();
+string N = ReadLine()!;
 if (N.Length > 2)
     WriteLine($"третье число {N[2].ToString()}");
 else 
