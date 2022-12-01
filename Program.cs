@@ -349,7 +349,7 @@ WriteLine($" Факториал {numberWork} равен {summWork} ");*/
 //Напишите программу, которая выводит массив из 8 элементов, заполненный нулями и единицами в случайном порядке.
 //[1,0,1,1,0,1,0,0]
 
-using static System.Console;
+/*using static System.Console;
 Clear();
 
 int [] FillArrayZerosOnes(int size)
@@ -374,4 +374,4 @@ void PrintArray(int[] array)
 
 WriteLine( "Число элементов массива задано по умолчанию 8 ");
 int[] arrayWork=FillArrayZerosOnes(8);
-PrintArray(arrayWork);
+PrintArray(arrayWork);*/
